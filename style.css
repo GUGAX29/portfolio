@@ -169,6 +169,12 @@ header ul li a{
 
 }
 
+.projetos-section p{
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .projetos-section li{
    
     margin-bottom: 1rem;
@@ -277,4 +283,30 @@ footer a{
     align-items : center;
     flex-direction: row reverse;
     color: rgba(0, 169, 247, 0.575)
+}
+
+@media screen and (min-width:48rem){
+    
+
+    .hero-section ul{
+        flex-direction: row;
+    }
+
+    .hero-section ul li{
+        width: 100%;
+    }
+
+    .about-section {
+        display: flex;
+        gap: 2rem;
+        
+    }
+
+    .projetos-section ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 1rem;
+    }
+
+
 }
