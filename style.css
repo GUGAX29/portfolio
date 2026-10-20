@@ -130,6 +130,7 @@ header ul li a{
 .hero-section ul li:first-child a, form button {
     background-color: var(--bg-button-primario);
     color: var(--cor-texto-button-primario);
+    cursor: pointer;
 }
 
 .hero-section ul li:last-child a {
@@ -234,6 +235,10 @@ div{
     text-align: left;
     background-color: var(--bg-secundario);
     /*  gap: 1rem; */
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
 }
 
 form input, form textarea{
@@ -302,11 +307,34 @@ footer a{
         
     }
 
-    .projetos-section ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 1rem;
+    .about-text{
+        text-align: left;
     }
 
+    .projetos-section ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
 
+@media screen and (min-width: 75rem){
+    .projetos-section ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contato-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contato-section div{
+        text-align: left;
+    }
+
+    .contato-section p{ 
+        margin: 1rem 0;
+    }
 }
